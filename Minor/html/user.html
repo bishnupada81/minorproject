@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+    <section class="left">
+
+        <div class="logo"><img src="../img/Logo.png" alt="logo"></div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="user.html" class="current">User</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="routine.html">Routine</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="log-sign.html">Log out</a></li>
+            </ul>
+        </div>
+
+        <div class="footer"><h5>imds v1.0</h5></div>
+
+    </section>
+
+    <section class="right">
+
+        <div class="picturebox">
+                <div class="image">
+                        <img src="../img/prssir.jpg">
+                    </div>
+
+                <div class="prOfile">
+                    <p><b>MY PROFILE</b></p>
+                    UPLOAD PHOTO<input type="file" accept=".jpg,.jepg">
+                </div>
+
+        </div>
+       
+        <div class="details">
+            <br><br><from class="detail">
+                   <fieldset>&nbsp;
+                            <legend>Personal Information:</legend>
+                            &nbsp;&nbsp;Name:<input type="text" name="name" id="name" disabled>
+                            Email ID:<input type="text" name="emailid" ><br><br>
+                            &nbsp;&nbsp
+                            Phone No:<input type="number" name="phoneno" id="phoneno" disabled>
+                            &nbsp;&nbsp&nbsp;&nbsp Sex:
+                            &nbsp;&nbsp&nbsp;&nbsp
+                            <input type="radio" name="gender" id="male" disabled>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" disabled>
+                            <label for="female">Female</label>
+                    </fieldset><br><br>
+
+                    <fieldset>&nbsp;
+                            <legend>Educational Information:</legend>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            Cource <select id="cource" disabled>
+                                    <option>Select Course</option>
+                                    <option>MCA</option>
+                                    <option>MTech</option>
+                                    </select>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            Roll No:<input type="text" name="rollno" id="rollno" disabled><br><br>
+                            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            Registration no:<input type="text" name="registrationno" id="registrationno" disabled>
+                    </fieldset>
+                   <br><br><br> <center><button class="btn" id="edit" onclick="return handleEdit()"> Edit  </button></center>
+            </from>
+        </div>
+
+        <div class="button">
+            <div class="alignbtn">
+                <button class="btn1" id="save" onclick="return handleEdit()" hidden>Save</button>
+                <br><a href="user.html"><button class="btn1" id="cancle" onclick="cancle()">cancel</button></a>
+            </div>
+                
+        </div>
+
+    </section>
+
+</body>
+<script src="../js/user.js"></script>
+</html>
