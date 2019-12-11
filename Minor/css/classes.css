@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
+    box-shadow: 0  10px 40px rgb(0,0,0,.4);
 }
 
 .logo { 

@@ -21,11 +21,44 @@
         </div>
         
         <div class="signup-form">
-            <input type="text" name="FullName" placeholder="Full Name" class="input"><br>
-            <input type="email" name="Email" placeholder="Enter your Email ID" class="input"><br>
-            <input type="password" name="FullName" placeholder="Choose a Password" class="input"><br>
+            <input type="email" name="Email" placeholder="Enter your Email ID" class="input" id="email"><br>
+            <input type="password" name="FullName" placeholder="Choose a Password" class="input" id="password"><br>
+            <select class="input" id="catagory">
+                    <option>Select catagory</option>
+                    <option value="student">Student</option>
+                    <option value="techer">Teacher</option>
+                    </select><br>
+            <div class="input5">
+            <select class="input2 " id="cource" disabled="true" name="cource1" onchange="populate(this.id,'year')">
+                            <option>Select Cources</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MTECH">MTECH</option>
+                            <option value="M.SC">M.SC</option>
+            </select>
+            <select class="input2" id="abbli" disabled="true">
+                    <option value="student">JKM</option>
+                    <option value="student">PRS</option>
+                    <option value="student">AM</option>
+                    <option value="techer">SM</option>
+                    <option value="techer">KM</option>
+            </select><br>
+        </div>
+        <div class="input6">   
+            <select class="input2" id="year" disabled="true" name="year">
+                <option>Select Year</option>
+            </select>
+            <select class="input2" id="sem" disabled="true">
+                    <option>Select Semister</option>
+                    <option value="student">1st sem</option>
+                    <option value="student">2nd sem</option>
+                    <option value="student">3rd sem</option>
+                    <option value="techer">4th sem</option>
+                    <option value="techer">5th sem</option>
+                    <option value="techer">6th sem</option>
+            </select><br> 
+        </div>  
             <button class="btn">Sign Up</button>
-            <div class="divider">
+            <!-- <div class="divider">
                 <p>or connect with</p>
             </div>
             <div class="social">
@@ -33,17 +66,22 @@
                 <a class="social-buttons" href="#"><i class="fab fa-google"></i></a>
                 <a class="social-buttons" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="social-buttons" href="#"><i class="fab fa-github"></i></a>
-            </div>
+            </div> -->
         </div>
             
         <div class="signin-form">
             <input type="text" name="Email" placeholder="Email or Username" class="input"><br>
             <input type="password" name="Password" placeholder="Password" class="input"><br>
+            <select class="input">
+                    <option>Select catagory</option>
+                    <option >Student</option>
+                    <option >Teacher</option>
+                    </select><br>
             <button class="btn">Sign In</button>
             <div class="forgot">
                 <a href="#">Forgot Username/Password?</a>
             </div>
-            <div class="divider">
+            <!-- <div class="divider">
                 <p>or connect with</p>
             </div>
             <div class="social">
@@ -51,7 +89,7 @@
                 <a class="social-buttons" href="#"><i class="fab fa-google"></i></a>
                 <a class="social-buttons" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="social-buttons" href="#"><i class="fab fa-github"></i></a>
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -59,4 +97,5 @@
     
 </body>
     <script src="../js/log-sign.js"></script>  
+
 </html>

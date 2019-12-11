@@ -12,6 +12,7 @@ body{
 
 .container{
     width: 30%;
+    height: 50%;
     margin: 10% auto;
     box-shadow: 14px 1px 31px -4px rgba(150,145,150,1);
 }
@@ -28,7 +29,7 @@ h1{
   background: #ecf4f3;
   font-weight: 700;
   float: left;
-  height: 4rem;;
+  height: 3rem;;
   line-height: 4rem;
   text-align: center;
   cursor: pointer;
@@ -47,7 +48,7 @@ h1{
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     border: 2px solid #ecf4f3;
     outline: none;
     color: #3e3e40;
@@ -59,7 +60,29 @@ h1{
 .input:focus{
     border: 2px solid #34b3a0;
 }
+ .input2{
+    width: 45%;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ecf4f3;
+    outline: none;
+    color: #3e3e40;
+    font-family: "Blinker", sans-serif;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+.input2:focus{
+    border: 2px solid #34b3a0;
+}
 
+.input5{
+    width: 110%;
+}
+
+.input6{
+width: 110%;
+}
 .btn{
     width: 100%;
     height: 3rem;
